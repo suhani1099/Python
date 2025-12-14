@@ -154,6 +154,63 @@ Examples:
 ```
 ' " # \ () {} [] : ; @ , . ` =
 ```
+## 3. Barebones of a Python Program
+A python program may contain various elements such as comments, expressions, statements, etc.
+basic structure:
+# This is a comment
+
+42  # expression statement
+
+def my_function():  # function definition
+    # This is a block (indented code)
+    x = 1          # statement
+    y = x + 1      # expression inside a statement
+    return y       # statement
+
+my_function()  # expression statement
+What’s shown
+
+Comment
+
+A comment is text ignored by the Python interpreter.
+It is used to explain code to humans.
+Comment → # This is a comment
+
+Expression
+
+An expression is code that produces a value.
+Expression statement → 42, my_function()
+
+Statement
+
+A statement is a complete instruction that performs an action.
+Statement → x = 1, return y
+
+Function
+
+A function is a named, reusable block of code that can take inputs and return a value.
+Function → def my_function():
+
+Block
+
+A block is a group of statements executed together, defined by indentation in Python.
+Block → the indented body under def
+def my_function():
+    x = 1
+    return x
+    Indentation
+
+Indentation is how Python defines blocks instead of using braces {}.
+
+if True:
+    print("inside block")
+
+Program
+
+A program is a sequence of statements executed by the Python interpreter.
+
+# entire file is a program
+
 
 ## 3. Variables in Python
 
@@ -199,4 +256,14 @@ Python does not have true constants, but uppercase names indicate constant-like 
 PI = 3.14159
 ```
 
+## SIMPLE INPUT AND OUTPUT 
+name = input("Enter your name: ")
+print(name)
+Input → input() reads a line of text from the user
+
+Output → print() writes text to the screen
+
+Statement → assignment to name
+
+Expression → input(...), name
 
